@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .navbarmy {
+    background: linear-gradient(rgb(8, 6, 78), rgb(3, 3, 50));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.674);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: silkscreen;
+    padding-bottom: 5px;
+  }
+  
+  .logo:hover {
+    letter-spacing: 5px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .navbarmy-links {
+    font-family: raleway dots;
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+  }
+  
+  .navbarmy-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: -20px;
+  }
+  
+  .login{
+    font-weight: bold;
+  }
+  
+  .signup{
+    font-weight: bold;
+    border: 1px white solid;
+    border-radius: 30px;
+    
+  }
+  
+  
+  
+  
+  .video-container {
+    position: relative;
+    height: 640px;
+    overflow: hidden;
+  }
+  
+  video {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+  }
+  
+  /* CSS */
+  .text-overlay {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+    font-size: 40px;
+    font-family: silkscreen;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  
+  .get-started-button {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff32;
+    border: white solid;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: silkscreen;
+    text-decoration: none;
+  }
+  
+  
+  .wrapper {
+    box-sizing: border-box;
+    background: linear-gradient(
+      rgb(8, 6, 78) 0%,
+      rgb(47, 47, 119) 50%,
+      rgb(8, 6, 78) 100%
+    );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+  }
+  
+  .card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  }
+  
+  .card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+  }
+  
+  .description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+  }
+  
+  .description h4 {
+    text-transform: uppercase;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked + label {
+    width: 600px;
+  }
+  
+  input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .card[for="c1"] {
+    background-image: url('./assets/d1.png');
+  }
+  .card[for="c2"] {
+    background-image: url('./assets/d2.png');
+  }
+  .card[for="c3"] {
+    background-image: url('./assets/d3.png');
+  }
+  .card[for="c4"] {
+    background-image: url('./assets/d4.png');
+  }
+  
+  
+  
+  .ourmembers{
+    padding-top: 40px;
+    font-family: silkscreen;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffffff, #aeaeae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -9px;
+  }
+  
+  .membername{
+    color: white;
+    font-family: silkscreen;
+  }
+  
+  .about-div{
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .members{
+    background: linear-gradient(
+      rgb(3, 3, 50) 0%,
+      rgb(8, 6, 78) 20%,
+        rgb(3, 3, 50) 100%
+    );
+  }
+  .about-div *{
+    margin: 10px 0px;
+  }
+  
+  #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5d4ffc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .copyclaim{
+    text-align: center;
+  }
+  
+  /* Add your existing CSS */
+  
+  /* Custom Scrollbar */
+  body::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(11, 9, 51);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    
+    background-color: rgb(26, 26, 208); /* Initial color */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* ... Your existing CSS ... */
+  
+  /* Toggle Button Style */
+  .toggle-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+    color: rgb(25, 20, 62);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
