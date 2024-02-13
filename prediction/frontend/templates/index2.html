@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Chatbox</title>
+    <link rel="stylesheet" href="D:\disease detection\Disease-Prediction-using-ML\prediction\frontend\templates\style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Silkscreen&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Raleway+Dots&family=Silkscreen&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<body>
+
+    <nav class="navbarmy">
+        <div class="logo">GG CHATBOT.</div>
+        
+        <a class="navbarmy-links" href="./index.html">Back to Home</a>
+    </nav>
+    
+<div class="video-container">
+    <video autoplay muted loop class="background-video">
+        <!-- Add your video source here -->
+        <source src="D:\disease detection\Disease-Prediction-using-ML\prediction\frontend\templates\assets\backdropvid.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="chatbox">
+        <div class="chat-header" id="startTalkingHeader">
+            
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Chat messages will be appended here dynamically -->
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+<div class="toggle-btn" onclick="toggleScrollbarColor()"></div>
+<div class="bot-message"></div>
+
+
+
+<script src="D:\disease detection\Disease-Prediction-using-ML\prediction\frontend\templates\script2.js"></script>
+</body>
+</html>
